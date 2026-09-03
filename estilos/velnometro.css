@@ -1,0 +1,97 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    background: linear-gradient(90deg , #999,#777, #555);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fechar {
+    width: 98%;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fechar a {
+    justify-self: end;
+    align-self: end;
+}
+
+.X{
+    width: 30px;
+}
+
+.contador{
+    width: 98%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+h2{
+    font-size: 8em;
+
+    margin: 0;
+}
+
+span{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.botoes{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+.botoes button{
+    align-self: center;
+    padding: 20px;
+
+    width: 98%;
+
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+    font-size: 25px;
+}
+
+.iniciar {
+    background-color: rgb(15, 136, 184);
+}
+.iniciar:hover{
+    background-color: rgb(13, 101, 136); 
+    transition: all 300ms;
+}
+
+.parar {
+    background-color: rgb(192, 24, 24);
+    display:none;
+}
+.parar:hover{
+    background-color: rgb(153, 8, 8);
+
+    transition: all 300ms;
+}
