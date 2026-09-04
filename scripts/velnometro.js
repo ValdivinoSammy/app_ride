@@ -39,6 +39,6 @@ BtoParar.addEventListener("click" , ()=>{
     
     BtoIniciar.style.display = "";
     BtoParar.style.display = "none";
-    window.location.href="../";
+    window.location.href="../index.html";
 })
 

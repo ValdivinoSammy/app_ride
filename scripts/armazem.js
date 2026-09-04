@@ -11,7 +11,7 @@ function corridaEmAndamento(){
 };
 
 function pegandoTodasAsCorridas(){
-    return Object.entries(localStorage);
+    return Object.entries(localStorage).filter(([id]) => /^\d+$/.test(id));
 }
 
 // guarda no storage o obejeto "corridaRecorde" em string

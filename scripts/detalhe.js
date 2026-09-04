@@ -15,7 +15,7 @@ const dataDeInicio = document.createElement("div");
 const deletar = document.querySelector("#deletar");
 deletar.addEventListener("click", ()=>{
     localStorage.removeItem(corridaID);
-    window.location.href="../";
+    window.location.href="../index.html";
 })
 
 const primeiraPos = corrida.dados[0];
