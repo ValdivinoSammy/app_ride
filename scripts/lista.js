@@ -13,7 +13,7 @@ todasCorridas.forEach(async ([id, valor]) => {
     divItens.classList.add("item");
     divItens.addEventListener("click", () => {
         sessionStorage.setItem("id", divItens.id);
-        window.location.href = `../paginas/detalhe.html`
+        window.location.href = `./paginas/detalhe.html`
     })
     container.appendChild(divItens);
 
