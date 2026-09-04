@@ -12,7 +12,8 @@ todasCorridas.forEach(async ([id, valor]) => {
     divItens.id = corrida.id;
     divItens.classList.add("item");
     divItens.addEventListener("click", () => {
-        window.location.href = `../paginas/detalhe.html?id=${corrida.id}`
+        sessionStorage.setItem("id", divItens.id);
+        window.location.href = `../paginas/detalhe.html`
     })
     container.appendChild(divItens);
 
@@ -48,8 +49,6 @@ todasCorridas.forEach(async ([id, valor]) => {
     listaDiv.appendChild(dataDeInicio);
 
     // adicionando textos na ul
-    console.log(corrida);
-    console.log(corrida.dados);
     const primeiraPos = corrida.dados[0];
     cidade.innerText = await pegueMinhaPos(primeiraPos.latitude, primeiraPos.longitude);
     cidade.style.fontSize = "14px";
