@@ -2,7 +2,6 @@ const BtoIniciar = document.querySelector(".iniciar");
 const BtoParar = document.querySelector(".parar");
 const velocidadeElemento = document.querySelector("#velocidade");
 const X = document.querySelector(".X");
-console.log(X)
 
 let wpID = null;
 let corridaRolando = null;
